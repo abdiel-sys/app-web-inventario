@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://167.233.210.114:3000/api';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://api.abdevlab.work/api';
 
 const getToken = () => localStorage.getItem('inventario_token');
 

@@ -118,23 +118,23 @@ export default function LoginView() {
           </button>
         </form>
 
-        <div className="login-divider">Demo quick-login</div>
-
-        <div className="quick-login-grid">
-          {QUICK_LOGINS.map((ql) => (
-            <button
-              key={ql.role}
-              id={`quick-login-${ql.role}`}
-              className="quick-login-btn"
-              onClick={() => handleQuickLogin(ql)}
-              disabled={loading}
-              title={`Sign in as ${ql.label}`}
-            >
-              <ShieldCheck size={16} />
-              <span className={`badge ${ql.badge}`}>{ql.label}</span>
-            </button>
-          ))}
-        </div>
+        {/*   <div className="login-divider">Demo quick-login</div> */}
+        {/**/}
+        {/*   <div className="quick-login-grid"> */}
+        {/*     {QUICK_LOGINS.map((ql) => ( */}
+        {/*       <button */}
+        {/*         key={ql.role} */}
+        {/*         id={`quick-login-${ql.role}`} */}
+        {/*         className="quick-login-btn" */}
+        {/*         onClick={() => handleQuickLogin(ql)} */}
+        {/*         disabled={loading} */}
+        {/*         title={`Sign in as ${ql.label}`} */}
+        {/*       > */}
+        {/*         <ShieldCheck size={16} /> */}
+        {/*         <span className={`badge ${ql.badge}`}>{ql.label}</span> */}
+        {/*       </button> */}
+        {/*     ))} */}
+        {/*   </div> */}
       </div>
     </main>
   );
